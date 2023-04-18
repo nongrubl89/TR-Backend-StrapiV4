@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tail_numbers",
+  "info": {
+    "singularName": "tail-number",
+    "pluralName": "tail-numbers",
+    "displayName": "Tail Numbers",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Owner": {
+      "type": "string"
+    },
+    "TailNumber": {
+      "type": "string"
+    },
+    "PIC": {
+      "type": "string"
+    },
+    "SIC": {
+      "type": "string"
+    },
+    "CabinAttendant": {
+      "type": "string"
+    },
+    "StandardStockNonPerishable": {
+      "type": "richtext"
+    },
+    "AircraftType": {
+      "type": "string"
+    },
+    "HomeICAO": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "TailNumber"
+    },
+    "Capacity": {
+      "type": "integer"
+    },
+    "StandardStockPerishable": {
+      "type": "richtext"
+    },
+    "trips": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::trip.trip",
+      "mappedBy": "tail_number"
+    }
+  }
+}
