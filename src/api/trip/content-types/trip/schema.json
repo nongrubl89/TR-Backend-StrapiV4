@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -33,6 +33,16 @@
     "Slug": {
       "type": "uid"
     },
+    "tail_number": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::tail-number.tail-number",
+      "inversedBy": "trips"
+    },
+    "uuid": {
+      "type": "customField",
+      "customField": "plugin::field-uuid.uuid"
+    },
     "CateringRequests": {
       "type": "richtext"
     },
@@ -45,21 +55,8 @@
       "repeatable": true,
       "component": "name.pax-name"
     },
-    "TripStatus": {
-      "type": "boolean"
-    },
     "DebriefComplete": {
       "type": "boolean"
-    },
-    "tail_number": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::tail-number.tail-number",
-      "inversedBy": "trips"
-    },
-    "uuid": {
-      "type": "customField",
-      "customField": "plugin::field-uuid.uuid"
     }
   }
 }

@@ -1,8 +1,13 @@
 {
   "collectionName": "components_name_pax_names",
   "info": {
-    "displayName": "PaxName"
+    "displayName": "PaxName",
+    "description": ""
   },
   "options": {},
-  "attributes": {}
+  "attributes": {
+    "PassengerName": {
+      "type": "string"
+    }
+  }
 }

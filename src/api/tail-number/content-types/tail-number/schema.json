@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -51,6 +51,15 @@
       "relation": "oneToMany",
       "target": "api::trip.trip",
       "mappedBy": "tail_number"
+    },
+    "CabinAttendantEmail": {
+      "type": "string"
+    },
+    "SICEmail": {
+      "type": "string"
+    },
+    "PICEmail": {
+      "type": "string"
     }
   }
 }
