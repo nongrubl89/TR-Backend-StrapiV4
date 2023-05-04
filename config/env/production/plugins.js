@@ -7,7 +7,7 @@ module.exports = {
         depthLimit: 10,
         amountLimit: 100,
         apolloServer: {
-          tracing: false,
+          tracing: true,
         },
       },
     },
